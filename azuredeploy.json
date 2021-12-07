@@ -43,7 +43,7 @@
       "metadata": {
         "description": "The location of resources, such as templates and DSC modules, that the template depends on"
       },
-      "defaultValue": "https://raw.githubusercontent.com/mikepfeiffer/azure-domain-controller/master/"
+      "defaultValue": "https://github.com/nanigan/domaincontrollertemplates.git"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
@@ -213,7 +213,7 @@
       ],
       "properties": {
         "hardwareProfile": {
-          "vmSize": "Standard_D2s_v3"
+          "vmSize": "Standard_D2s_v5"
         },
         "availabilitySet": {
           "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('adAvailabilitySetName'))]"
